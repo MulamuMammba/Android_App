@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:theme="@style/Theme.G2"
-    tools:context=".dashboard">
+    tools:context=".Dashboard">
 
 
     <TextView

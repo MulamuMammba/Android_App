@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 else{
                     if (user.text.toString() == x && password.text.toString() == y){
-                        val intent = Intent(this, dashboard::class.java)
+                        val intent = Intent(this, Dashboard::class.java)
                         startActivity(intent)
                         finish()
                         Toast.makeText(this, "Validation Completed", Toast.LENGTH_SHORT).show()
