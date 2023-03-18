@@ -10,6 +10,10 @@ class dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dashboard)
 
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+            //Prevent Going back to sign in page
+            }
+        })
         }
-
         }
