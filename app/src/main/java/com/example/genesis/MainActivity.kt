@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -14,31 +15,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Sign in verification
         val user = findViewById<EditText>(R.id.user)
         val password = findViewById<EditText>(R.id.password)
         val button = findViewById<Button>(R.id.sign_in_btn)
+        val exit = findViewById<View>(R.id.back_btn_main)
 
+        //Exit
+        exit.setOnClickListener {
+            System.exit(0)
+        }
+
+        //Sign in verification
         val x = "Mammba"
         val y = "Overread31"
 
-
+        //Sign up button functionality
             button.setOnClickListener{
-                val user_validate = user.text.toString().trim()
-                val password_validate = password.text.toString().trim()
 
-                if (user_validate.isEmpty() && password_validate.isEmpty()){
+                if (user.text.toString().isEmpty() && password.text.toString().isEmpty()){
                     user.error = "Username Required"
                     password.error = "Password Required"
                 }
-                else if (user_validate.isEmpty()){
+                else if (user.text.toString().isEmpty()){
                     user.error = "Username Required"
                 }
-                else if(password_validate.isEmpty()){
+                else if(password.text.toString().isEmpty()){
                     password.error = "Password Required"
                 }
                 else{
-                    if (user_validate == x && password_validate == y){
+                    if (user.text.toString() == x && password.text.toString() == y){
                         val intent = Intent(this, dashboard::class.java)
                         startActivity(intent)
                         Toast.makeText(this, "Validation Completed", Toast.LENGTH_SHORT).show()
@@ -55,5 +60,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
             }
+
+
     }
 }
