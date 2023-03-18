@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Write that down</string>
+    <string name="back_button">back Button</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_to_the_work_in_progress_dashboard">Welcome to the work in progress Dashboard</string>
+
+</resources>

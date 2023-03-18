@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    //New Theme
+    <style name="Theme.G2" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:colorPrimary">@color/main_color</item>
+
+        <!-- Secondary brand color. -->
+        <item name ="android:colorSecondary">@color/Dark</item>
+
+        <!-- Background brand color. -->
+        <item name="backgroundColor">@color/tertiary_color</item>
+    </style>
+    <style name="cardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/CardView</item>
+    </style>
+    <style name="CardView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">48sp</item>
+        <item name="cornerSizeTopRight">48sp</item>
+        <item name="cornerSizeBottomRight">48sp</item>
+        <item name="cornerSizeBottomLeft">48sp</item>
+    </style>
+</resources>
