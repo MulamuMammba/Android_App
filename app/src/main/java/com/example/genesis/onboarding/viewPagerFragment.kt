@@ -37,6 +37,7 @@ class viewPagerFragment(
             lifecycle
         )
 
+            //TODO must find a way to sort this out
         return view
     }
 }
